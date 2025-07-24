@@ -1,5 +1,6 @@
 //
-// Created by gerw on 8/20/24.
+// @brief: Item基类
+// @author: Ma Xin
 //
 
 #include "Item.h"

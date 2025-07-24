@@ -1,18 +1,29 @@
 //
-// Created by gerw on 8/20/24.
+// @brief: Link角色
+// @author: Ma Xin
 //
 
-#include <memory>
-#include "Link.h"
-#include "../HeadEquipments/CapOfTheHero.h"
-#include "../Armors/OldShirt.h"
-#include "../LegEquipments/WellWornTrousers.h"
 
-Link::Link(QGraphicsItem *parent) : Character(parent) {
-    headEquipment = new CapOfTheHero(this);
-    legEquipment = new WellWornTrousers(this);
-    armor = new OldShirt(this);
-    headEquipment->mountToParent();
-    legEquipment->mountToParent();
-    armor->mountToParent();
+#include "Link.h"
+
+Link::Link(QGraphicsItem *parent, const QString &pixmapPath) : Character(parent, ":/Items/Players/NPC_Blue.png") {
+    standPixmap = QPixmap(":/Items/Players/NPC_Blue.png");
+    crouchPixmap = QPixmap(":/Items/Players/NPC_Blue_Crouch.png");
+    fistPixmap = QPixmap(":/Items/Players/NPC_Blue_Fist.png");
+}
+
+void Link::updateCrouchPixmap(bool crouch) {
+    if (crouch) {
+        pixmapItem->setPixmap(crouchPixmap);
+    } else {
+        pixmapItem->setPixmap(standPixmap);
+    }
+}
+
+void Link::updateFistPixmap(bool fist) {
+    if (fist) {
+        pixmapItem->setPixmap(fistPixmap);
+    } else {
+        pixmapItem->setPixmap(standPixmap);
+    }
 }

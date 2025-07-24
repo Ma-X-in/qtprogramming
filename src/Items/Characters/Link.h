@@ -1,17 +1,26 @@
 //
-// Created by gerw on 8/20/24.
+// @brief: Link角色
+// @author: Ma Xin
 //
 
-#ifndef QT_PROGRAMMING_2024_LINK_H
-#define QT_PROGRAMMING_2024_LINK_H
 
+#ifndef QTPROGRAMMING_LINK_H
+#define QTPROGRAMMING_LINK_H
 
 #include "Character.h"
 
 class Link : public Character {
 public:
-    explicit Link(QGraphicsItem *parent = nullptr);
+    explicit Link(QGraphicsItem *parent = nullptr, const QString &pixmapPath = "");
+
+protected:
+    void updateCrouchPixmap(bool crouch);
+    void updateFistPixmap(bool fist);
+
+private:
+    QPixmap standPixmap;
+    QPixmap crouchPixmap;
+    QPixmap fistPixmap;
 };
 
-
-#endif //QT_PROGRAMMING_2024_LINK_H
+#endif //QTPROGRAMMING_LINK_H

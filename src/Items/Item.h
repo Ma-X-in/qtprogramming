@@ -1,9 +1,10 @@
 //
-// Created by gerw on 8/20/24.
+// @brief: Item基类
+// @author: Ma Xin
 //
 
-#ifndef QT_PROGRAMMING_2024_ITEM_H
-#define QT_PROGRAMMING_2024_ITEM_H
+#ifndef QTPROGRAMMING_ITEM_H
+#define QTPROGRAMMING_ITEM_H
 
 #include <QGraphicsItem>
 #include <QPainter>
@@ -16,14 +17,10 @@ public:
         if (pixmapItem != nullptr) {
             return this->pixmapItem->boundingRect();
         }
-        // Empty rectangle makes the empty item not selectable and not collider
         return {};
     }
 
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
-               QWidget *widget) override {
-        // Draw nothing as it is an empty item
-        // Its pixmapItem is automatically handled by children's paint()
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override {
     }
 
 protected:
@@ -31,4 +28,4 @@ protected:
 };
 
 
-#endif //QT_PROGRAMMING_2024_ITEM_H
+#endif //QTPROGRAMMING_ITEM_H

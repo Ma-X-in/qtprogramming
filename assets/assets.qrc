@@ -1,9 +1,22 @@
 <RCC>
     <qresource prefix="/">
-        <file>Items/Armors/OldShirt/BotW_Old_Shirt_Icon.png</file>
-        <file>Items/Armors/FlamebreakerArmor/BotW_Flamebreaker_Armor_Icon.png</file>
-        <file>Items/HeadEquipments/CapOfTheHero/BotW_Cap_of_the_Hero_Icon.png</file>
-        <file>Items/LegEquipments/WellWornTrousers/BotW_Well-Worn_Trousers_Icon.png</file>
-        <file>Items/Maps/Battlefield/g9tOqth.png</file>
+        <file>Items/Maps/Battlefield/Background.png</file>
+        <file>Items/Players/NPC_Blue.png</file>
+        <file>Items/Players/NPC_Red.png</file>
+        <file>Items/Platforms/GrassPlatform.png</file>
+        <file>Items/Platforms/IcePlatform.png</file>
+        <file>Items/Platforms/LandPlatform.png</file>
+        <file>Items/Players/NPC_Blue_Crouch.png</file>
+        <file>Items/Players/NPC_Red_Crouch.png</file>
+        <file>Items/Weapons/Bomb.png</file>
+        <file>Items/Weapons/Bullet.png</file>
+        <file>Items/Weapons/Knife.png</file>
+        <file>Items/Weapons/Rifle.png</file>
+        <file>Items/Weapons/Sniper.png</file>
+        <file>Items/Kits/Adrenaline.png</file>
+        <file>Items/Kits/Bandage.png</file>
+        <file>Items/Kits/Medkit.png</file>
+        <file>Items/Players/NPC_Blue_Fist.png</file>
+        <file>Items/Players/NPC_Red_Fist.png</file>
     </qresource>
 </RCC>

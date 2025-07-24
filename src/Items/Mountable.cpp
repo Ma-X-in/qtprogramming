@@ -1,6 +1,8 @@
 //
-// Created by gerw on 8/21/24.
+// @brief: 挂载基类
+// @author: Ma Xin
 //
+
 
 #include "Mountable.h"
 
